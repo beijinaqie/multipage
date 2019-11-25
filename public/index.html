@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>myvue3</title>
+		<style type="text/css">
+			@media screen and (max-width:480px) {
+			   html {
+			     font-size: 625%;
+			   }
+			 }
+		</style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but myvue3 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+	<script>
+		!function () {
+		   if (isMobileUserAgent()) {
+		     if (!/h5.html/.test(location.href)) {//移动端时，我们跳转到h5的html
+		       window.location.href = window.location.origin + '/h5.html'
+		     }
+		   }
+		   function isMobileUserAgent() {// 判断是pc端还是h5端
+		     return /iphone|ipod|android|windows.*phone|blackberry.*mobile/i.test(
+		       window.navigator.userAgent.toLowerCase()
+		     );
+		   }
+		 }()
+	</script>
+</html>
