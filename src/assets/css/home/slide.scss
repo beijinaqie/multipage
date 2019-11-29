@@ -1,0 +1,114 @@
+
+.bgImage_h5{
+  .topFixed1{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1010;
+    width: 100%;
+    height: 0.8rem;
+    // background-color: #1A1E26;
+}
+.topFixed2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1010;
+    width: 100%;
+    height: 0.8rem;
+    background: rgba(255,255,255,1); 
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.2);
+}
+}
+.btn{
+  float: left;
+  padding: 0.2rem;
+}
+.btnR{
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+}
+.imgClose{
+  width: 100%;
+  height: 0.1rem;
+}
+
+#slide{
+    background-color: #1A1E26;
+    z-index: 9999;
+  
+    ul {
+      width: 100%;
+      margin: 0 auto;
+      li{
+          line-height: 0.4rem;
+          font-size: 0.14rem;
+          font-weight: 400;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+          padding: 0 0.2rem;
+          text-align: center;
+        a{
+          text-align: left;
+          line-height: 60px;
+          font-weight: 400;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+        span{
+          font-size: 0.12rem;
+          color: #b3b1b1;
+        }
+        div{
+          a{
+            display: inline-block;
+            width: 100%;
+            padding-left: 0.22rem;
+            font-size: 0.12rem;
+            font-weight: 400;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #cccccc;
+          }
+        }
+      }
+      .radius{
+        a{
+          width: 1rem;
+          height: 0.36rem;
+          line-height: 0.36rem;
+          border-radius: 0.3rem;
+          border: 1px solid;
+          padding: 0.1rem 0.3rem;
+        }
+      }
+    }
+    
+}
+
+.slide1 .slide_content{
+    height: 100vh;
+    padding-top: 0.8rem;
+}
+.slide2{
+    position: fixed;
+    top: 0.8rem;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 0.8rem);
+}
+.slide2 .slide_content{
+    height: 100vh;
+    margin-top: 0.4rem;
+}
+
+#slide ul li a:hover,
+#slide .active {
+  color: #ef4040;
+}

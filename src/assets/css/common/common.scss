@@ -1,0 +1,262 @@
+.layout {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #fff;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  height: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/****************head    *********************************************************************/
+#header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  // top: 30px;
+  left: calc((100% - 1300px) / 2);
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-menu {
+    margin: 10px 60px 10px 0;
+    .header-img {
+      display: inline-block;
+      width: 8px;
+      height: 10px;
+      background-size: contain;
+    }
+    .ivu-anchor-wrapper {
+      overflow: visible;
+    }
+    .ivu-menu-submenu-title-icon {
+      display: none;
+    }
+    .ivu-select-dropdown {
+      min-width: 80px !important;
+      left: 0px;
+      text-align: center;
+    }
+    .ivu-menu-item-selected {
+      // color: #f00 !important;
+    }
+    .ivu-menu-light {
+      background-color: transparent;
+    }
+    .ivu-menu-horizontal.ivu-menu-light:after {
+      height: 0;
+    }
+    .ivu-menu-item-active,
+    .ivu-menu-item,
+    .ivu-menu-item:hover,
+    .ivu-menu-submenu,
+    .ivu-menu-submenu:hover {
+      border-bottom: none !important;
+      color: #fff !important;
+    }
+  }
+  .menList {
+    display: inline-block;
+    .head_icon {
+      font-size: 30px;
+      position: absolute;
+      right: -68px;
+      cursor: pointer;
+      i {
+        font-size: 30px;
+        opacity: 1;
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+/****************head    end*********************************************************************/
+/****************foot    ********************************************************************************/
+#footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 30px;
+  width: 500px;
+  left: calc((100% - 1300px) / 2);
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  border: 1px solid #fff;
+  .foot_wrap {
+    a {
+      font-size: 30px;
+      margin: 0 16px;
+      i {
+        font-size: 30px;
+        opacity: 1;
+        color: rgb(255, 255, 255);
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .arrowTop {
+    .arrow_web {
+      position: absolute;
+      bottom: 1vh;
+      left: 130%;
+      margin-left: -0.5rem;
+      -webkit-animation: arrowup 1s infinite;
+      -o-animation: arrowup 1s infinite;
+      animation: arrowup 1s infinite;
+    }
+  }
+  .arrowup {
+    -webkit-animation: arrowup 2s infinite;
+    -o-animation: arrowup 2s infinite;
+    animation: arrowup 2s infinite;
+  }
+  @-moz-keyframes arrowup {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      -moz-transform: translate(0, -4px);
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes arrowup {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translate(0, -4px);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes arrowup {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.8;
+      transform: translate(0, -4px);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+/****************foot   end *************************************************************************************/
+/****************Contract  *************************************************************/
+#Contract {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  // display: flex;
+  // justify-content: space-between;
+  // border: 1px solid red;
+  padding-top: 100px;
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 80px;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    z-index: 1;
+    .shadowImg {
+      width: 120px;
+      height: 42px;
+      background: linear-gradient(
+        327deg,
+        rgba(244, 66, 80, 1) 0%,
+        rgba(244, 66, 80, 0) 100%
+      );
+      display: block;
+      position: absolute;
+      top: 34px;
+      left: 58px;
+      z-index: -1;
+    }
+  }
+  .content {
+    width: 1100px;
+    height: 440px;
+    margin: 0 auto;
+    background: rgba(22, 26, 33, 1);
+    margin-top: 100px;
+    .form {
+      width: 600px;
+      padding: 40px 50px;
+    }
+    .Submit {
+      width: 180px;
+      height: 44px;
+      border: 2px solid rgba(255, 255, 255, 1);
+      background: transparent;
+      font-size: 14px;
+      color: #fff;
+      margin-top: 100px;
+    }
+  }
+  .contract_phone {
+    position: absolute;
+    right: 120px;
+    top: 180px;
+    width: 314px;
+    height: 628px;
+    img {
+      width: 100%;
+    }
+  }
+  .contract_href {
+    width: 1300px;
+    margin: 0 auto;
+    text-align: right;
+    // margin-top: 150px;
+    position: absolute;
+    bottom: -180px;
+    a {
+      display: inline-block;
+      padding: 0 20px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 40px;
+      color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+      &:hover {
+        color: #f44250;
+      }
+    }
+  }
+}
+
+/****************Contract   end *************************************************************/
+.ivu-input {
+  color: #fff !important;
+  font-size: 16px !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+.ivu-input:focus {
+  border-color: #f44250 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.ivu-input-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}

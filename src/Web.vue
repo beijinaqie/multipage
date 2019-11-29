@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-			这是pc
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+		<router-view v-if="!$route.meta.keepAlive"></router-view>
+		<keep-alive>
+			<router-view v-if="$route.meta.keepAlive"></router-view>
+		</keep-alive>
   </div>
 </template>
 

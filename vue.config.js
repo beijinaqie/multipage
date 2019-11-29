@@ -22,5 +22,6 @@ module.exports = {
 			// 提取出来的通用 chunk 和 vendor chunk。
 			chunks: ['chunk-vendors', 'chunk-common', 'h5']
 		}
-	}
+	},
+	lintOnSave: false
 }

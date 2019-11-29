@@ -1,16 +1,11 @@
 <template>
-  <div id="app">
-    <div id="nav">
-			这是h5
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div id="app">
+		<router-view v-if="!$route.meta.keepAlive"></router-view>
+		<keep-alive>
+			<router-view v-if="$route.meta.keepAlive"></router-view>
+		</keep-alive>
+	</div>
 </template>
 
 <style lang="scss">
-#app {
-	font-size: 0.16rem;
-}
 </style>

@@ -1,0 +1,82 @@
+body {
+  background-color: #f6f6f6 !important;
+}
+//滚动条不显示但是可以滚动
+::-webkit-scrollbar  
+{  
+	display: none!important;
+    width: 0px;  
+    height: 0px;  
+}
+.ivu-form .ivu-form-item-label {
+  font-size: 0.12rem !important;
+  color: #999 !important;
+}
+.ivu-input,
+.ivu-select-selection,
+.ivu-select-single .ivu-select-selection .ivu-select-placeholder,
+.ivu-select-single .ivu-select-selection .ivu-select-selected-value {
+  border-radius: 0 !important;
+  border-bottom: 0.01rem solid #cccccc;
+  border-top: none !important ;
+  border-right: none !important ;
+  border-left: none !important ;
+  background-color: transparent !important;
+  height: 0.32rem !important;
+  font-size: 0.12rem !important;
+}
+.ivu-btn-primary:focus,
+.ivu-btn:focus,
+.ivu-btn:focus,
+.ivu-input:focus,
+.ivu-select-visible .ivu-select-selection {
+  box-shadow: none !important;
+}
+.ivu-input:focus,
+.ivu-checkbox-checked:hover .ivu-checkbox-inner {
+  border-color: #c2000f !important;
+}
+.ivu-checkbox-checked .ivu-checkbox-inner {
+    border-color:#c2000f !important;
+    background-color:#c2000f !important;
+}
+.ivu-btn-primary {
+  border: none !important;
+}
+.ivu-checkbox-wrapper {
+  font-size: 0.11rem;
+  font-weight: normal;
+  line-height: 0.15rem;
+  color: #cccccc;
+}
+.ivu-tabs-nav{
+  width: 100% !important;
+  height: 80px;
+  line-height: 80px;
+}
+.ivu-tabs-ink-bar {
+    background-color: #c2000f !important;
+    left: 0.34rem;
+    width: 30% !important;
+    text-align: center;
+}
+.ivu-tabs-nav .ivu-tabs-tab {
+  font-size: 0.16rem;
+    color: #666666 !important;
+    width: 50%;
+    text-align: center;
+}
+.ivu-btn-ghost {
+    color: #cccccc;
+    background: 0 0;
+    width: 2rem;
+    height: 1.2rem;
+    font-size: 0.12rem;
+    margin-left: 0.6rem;
+}
+.ivu-select-item-selected, .ivu-select-item-selected:hover {
+    color: #c2000f !important;
+}
+.ivu-input-group-append, .ivu-input-group-prepend{
+      border: none !important;
+}
